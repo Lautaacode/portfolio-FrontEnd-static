@@ -1,76 +1,237 @@
 <!DOCTYPE html>
-<html lang="es" lang="en">
+<html lang="en">
     <head>
-        <meta name="keywords" content="portfolio"/>
-        <meta charset="utf-8"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
-        <title>Portfolio</title>
-    </head> 
-    <body>
-      <nav class="navbar-nav navbar-dark bg-dark sticky-top" role="navigation">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png" class="main-logo" alt="argpprod"/>
-          </a>
-          <ul class="list-unstyled nav-ul">
-            <li class="nav-item">
-              <a class="nav-link nav-box" href="https://www.linkedin.com/in/lautaro-blanco-44621215a/" target="_blank">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </li>
-            <li>  
-              <a class="nav-link nav-box" href="https://www.instagram.com/lautaa_asinoma/" target="_blank">
-                <i class="bi bi-instagram"></i>
-              </a>
-            <li>
-              <a class="nav-link nav-box" href="https://github.com/Lautiko/portfolio-FrontEnd" target="_blank">
-                <i class="bi bi-github"></i>
-              </a>
-            </li>
-            <li>
-              <a class="btn btn-light login" href="login.html">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <article class="main-page">
-          <section class="banner-container">
-            <img src="img/foto_de_perfil.jpg" class="img-perfil"/>
-            <img src="img/Banner.png" class="img-banner"/>
-          </section>
-          <section class="main-page">
-            <div class="description-container">
-              <ul class="list-unstyled name-container">
-                <li class="">
-                  <p class="name">Lautaro Blanco</p>
-                </li>
-                <li class="">
-                  <p class="profession">Estudiante de ingenieria en sistemas.</p>
-                </li>
-                <li class="">
-                  <p class="profession">Desarrollador full stack Jr.</p>
-                </li>
-              </ul>
-              <ul class=" list-unstyled img-description-container">
-                <li class="">
-                  
-                </li>
-                <li class="">
-                  <img src="img/utn.jpg" class="img-description">
-                </li>
-              </ul>
+        <title>Document</title>
+    </head>
+    <body class="">
+        <!-- nav -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-size" href="index.html">
+                    <img src="img/APLogo-20-20.png" id="img-logo"  alt="logo AP"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="col justify-content-md-end navbar-nav">
+                        <a class="nav-link icon-size" href="https://www.linkedin.com/in/lautaro-blanco-44621215a/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a class="nav-link icon-size" href="https://www.instagram.com/lautaa_asinoma/" target="_blank">
+                           <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="nav-link icon-size" href="https://github.com/Lautiko/portfolio-FrontEnd-static" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a class="btn btn-light" href="login.html">Login</a>
+                    </div>
+                </div>
             </div>
-          </section>
-          <section class="info-container">
+        </nav>
+        <main class="main">  
+            <!-- header -->
+            <div class="container-fluid p-0">
+                <!--Banner-->
+                <div class="d-flex justify-content-end banner-container"><!--Banner-->
+                  <img src="img/Banner.png" id="img-banner" class="border-container">
+                  <div class="d-flex flex-column p-3 position-absolute">
+                    <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#bannerModal">
+                      <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                    </button>
+                    <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              ....
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+                <!--img-profile-->
+                <div class="d-flex flex-row profile-description-container"><!--description-->
+                  <div class="d-flex flex-column justify-content-end img-profile-container"><!--img-profile-->
+                    <img src="img/foto_de_perfil.jpg" id="img-profile" class="border-profile" alt=""/>
+                    <div class="d-flex flex-row justify-content-end">
+                      <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!--description-->
+                  <div class="container-fluid p-0">
+                    <div class="d-flex flex-column name-container">
+                      <p id="name"class=" text-title">Lautaro Blanco</p>
+                      <p id="" class="text-description ">Desarrollador Fullstack Jr.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column img-description-container ">
+                    <img src="img/utn.jpg" id="img-study" class="img-description" alt="">
+                    <img src="img/utn.jpg" id="img-work" class="img-description" alt="">
+                  </div>
+                  <div class="d-flex flex-column p-2">
+                    <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <!--contenedor info-->
+            <div class="container-fluid">
+              <section class="d-flex flex-row info-container">
+                <div class="container-fluid p-0">
+                  <p class="text-description">
+                    Acerca de mi:<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam velit unde dignissimos doloribus exercitationem fugiat a quam, repellat laborum reiciendis tempore animi mollitia dolorum consequuntur nostrum vitae voluptates saepe voluptatem?
+                  </p>
+                </div>
+                <div class="d-flex flex-column">
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                  </button>
+                </div>
 
-          </section>
-      </article>
-      <footer class="bg-dark footer-box">
-        <p>.</p>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-      <script src="js/bootstrap.min.js"></script>
-    </body>
+              </section>
+              <section class="d-flex flex-row justify-content-end info-container">
+                <!-- progress bar -->
+                <div class="progressbar-container p-0">
+                  <div class="d-flex flex-row progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:90;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-html5"></i>
+                        <h2>90<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:85;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h2>85<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:45;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h2>45<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h2>25<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-angular"></i>
+                        <h2>25<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-java"></i>
+                        <h2>25<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-java"></i>
+                        <h2>25<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex progress-container">
+                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <i class="fa-brands fa-angular"></i>
+                        <h2>25<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-end">
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                  </button>
+                </div>
+              </section>                  
+            </div>
+        </main>
+        <footer class="footer-container bg-dark">
+
+        </footer>
+        <!-- scripts -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/4825b5f8db.js" crossorigin="anonymous"></script>
+        <script src="scrispt.js"></script>
+      </body>
 </html>
