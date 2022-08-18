@@ -1,115 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <title>Document</title>
-    </head>
-    <body class="">
-        <!-- nav -->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-            <div class="container-fluid">
-                <a class="navbar-brand logo-size" href="index.html">
-                    <img src="img/APLogo-20-20.png" id="img-logo"  alt="logo AP"/>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="col justify-content-md-end navbar-nav">
-                        <a class="nav-link icon-size" href="https://www.linkedin.com/in/lautaro-blanco-44621215a/" target="_blank">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a class="nav-link icon-size" href="https://www.instagram.com/lautaa_asinoma/" target="_blank">
-                           <i class="bi bi-instagram"></i>
-                        </a>
-                        <a class="nav-link icon-size" href="https://github.com/Lautiko/portfolio-FrontEnd-static" target="_blank">
-                            <i class="bi bi-github"></i>
-                        </a>
-                        <a class="btn btn-light" href="login.html">Login</a>
-                    </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
+</head>
+
+<body class="">
+  <!-- nav -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-size" href="index.html">
+        <img src="img/APLogo.png" id="img-logo" alt="logo AP" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="col justify-content-md-end navbar-nav">
+          <a class="nav-link icon-size" href="https://www.linkedin.com/in/lautaro-blanco-44621215a/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a class="nav-link icon-size" href="https://www.instagram.com/lautaa_asinoma/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a class="nav-link icon-size" href="https://github.com/Lautiko/portfolio-FrontEnd-static" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a class="btn btn-light" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <!-- header -->
+    <div class="container-fluid p-0">
+      <!--Banner-->
+      <div class="d-flex justify-content-end banner-container">
+        <img src="img/Banner.png" id="img-banner" class="border-container">
+        <div class="d-flex flex-column p-3 position-absolute">
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#bannerModal">
+            <i class="fa-solid fa-pencil fs-6 text-center "></i>
+          </button>
+        </div>
+      </div>
+      <!--profile-->
+      <div class="d-flex flex-row profile-description-container">
+        <!--img-profile-->
+        <div class="d-flex flex-column justify-content-end img-profile-container">
+          <img src="img/foto de perfil.jpg" id="img-profile" class="border-profile" alt="" />
+          <div class="d-flex flex-row justify-content-end">
+            <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-pencil fs-6 text-center "></i>
+            </button>
+          </div>
+        </div>
+        <!--description-->
+        <div class="container-fluid p-0">
+          <div class="d-flex flex-column name-container">
+            <p id="name" class=" text-title">Lautaro Blanco</p>
+            <p id="" class="text-description ">Desarrollador Fullstack Jr.</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column img-description-container ">
+          <img src="img/utn.jpg" id="img-study" class="img-description" alt="">
+          <img src="img/utn.jpg" id="img-work" class="img-description" alt="">
+        </div>
+        <div class="d-flex flex-column p-2">
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-pencil fs-6 text-center "></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--contenedor info-->
+    <div class="container-fluid">
+      <!-- Estudios,Experencia -->
+      <section class="d-flex flex-row content-container">
+        <div class="d-flex flex-column container-80em">
+          <!-- experencia -->
+          <div class="d-flex flex-row">
+            <p class="text-title">Experencia:</p>
+          </div>
+          <div class="d-flex flex-row">
+            <!-- columna de filas-->
+            <div class="d-flex flex-column container-80em ">
+              <!-- filas con datos -->
+              <div class="d-flex flex-row border border-2 rounded p-2 m-1 box-shadow">
+                <div class="d-flex flex-column info-container">
+                  <div class="d-flex">Impresor fotografico</div>
+                  <div class="d-flex">
+                    <img src="/img/fotoeuropa.jpg" id="img-info" class="border-profile img-info" alt="" />
+                  </div>
+                  <div class="d-flex flex-column">2018 - 2019</div>
                 </div>
-            </div>
-        </nav>
-        <main class="main">  
-            <!-- header -->
-            <div class="container-fluid p-0">
-                <!--Banner-->
-                <div class="d-flex justify-content-end banner-container"><!--Banner-->
-                  <img src="img/Banner.png" id="img-banner" class="border-container">
-                  <div class="d-flex flex-column p-3 position-absolute">
-                    <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#bannerModal">
-                      <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
-                    </button>
-                    <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                              ....
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>                  
-                  </div>
-                </div>
-                <!--img-profile-->
-                <div class="d-flex flex-row profile-description-container"><!--description-->
-                  <div class="d-flex flex-column justify-content-end img-profile-container"><!--img-profile-->
-                    <img src="img/foto_de_perfil.jpg" id="img-profile" class="border-profile" alt=""/>
-                    <div class="d-flex flex-row justify-content-end">
-                      <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
-                      </button>
-                    </div>
-                  </div>
-                  <!--description-->
-                  <div class="container-fluid p-0">
-                    <div class="d-flex flex-column name-container">
-                      <p id="name"class=" text-title">Lautaro Blanco</p>
-                      <p id="" class="text-description ">Desarrollador Fullstack Jr.</p>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column img-description-container ">
-                    <img src="img/utn.jpg" id="img-study" class="img-description" alt="">
-                    <img src="img/utn.jpg" id="img-work" class="img-description" alt="">
-                  </div>
-                  <div class="d-flex flex-column p-2">
-                    <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
-                    </button>
-                  </div>
-                </div>
-            </div>
-            <!--contenedor info-->
-            <div class="container-fluid">
-              <section class="d-flex flex-row info-container">
                 <div class="container-fluid p-0">
-                  <p class="text-description">
-                    Acerca de mi:<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam velit unde dignissimos doloribus exercitationem fugiat a quam, repellat laborum reiciendis tempore animi mollitia dolorum consequuntur nostrum vitae voluptates saepe voluptatem?
-                  </p>
+                  <div class="d-flex flex-column info-text-container">
+                    <p class="text-description">
+                      FOTOEUROPA
+                    </p>
+                    <p class="text-description">
+                      Impresor fotografico:<br> edicion de fotos, colorimetria, armado de cuadros, etc.
+                    </p>
+                  </div>
                 </div>
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column ">
                   <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                    <i class="fa-solid fa-pencil fs-6 text-center "></i>
+                  </button>
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-trash-can fs-6 text-center "></i>
                   </button>
                 </div>
-
-              </section>
-              <section class="d-flex flex-row justify-content-end info-container">
-                <!-- progress bar -->
+              </div>
+            </div>
+          </div>
+          <!-- estudios -->
+          <div class="d-flex flex-row">
+            <p class="text-title">Estudios:</p>
+          </div>
+          <div class="d-flex flex-row">
+            <!-- columna de filas-->
+            <div class="d-flex flex-column container-80em ">
+              <!-- filas con datos -->
+              <div class="d-flex flex-row border border-2 rounded p-2 m-1 box-shadow">
+                <div class="d-flex flex-column info-container">
+                  <div class="d-flex">Secundario</div>
+                  <div class="d-flex">
+                    <img src="/img/cens.png" id="img-info" class="border-profile img-info" alt="" />
+                  </div>
+                  <div class="d-flex flex-column">2015 - 2018</div>
+                </div>
+                <div class="container-fluid p-0">
+                  <div class="d-flex flex-column info-text-container">
+                    <p class="text-description">
+                      Centro Educativo Nivel Secundario nº 451
+                    </p>
+                    <p class="text-description">
+                      Secundario completo con titulo en:<br>
+                      Bachiller con orientación en gestion y administración en práctica laboral y administrativa.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column ">
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-pencil fs-6 text-center "></i>
+                  </button>
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-trash-can fs-6 text-center "></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex flex-row border border-2 rounded p-2 m-1 box-shadow">
+                <div class="d-flex flex-column info-container">
+                  <div class="d-flex">Ing. en Sistemas</div>
+                  <div class="d-flex">
+                    <img src="/img/utn logo.jpg" id="img-info" class="border-profile img-info" alt="" />
+                  </div>
+                  <div class="d-flex flex-column">2021 - Actualidad</div>
+                </div>
+                <div class="container-fluid p-0">
+                  <div class="d-flex flex-column info-text-container">
+                    <p class="text-description">
+                      Universidad Tecnologica Nacional
+                    </p>
+                    <p class="text-description">
+                      Cursando 1er año de ingenieria en sistemas de información, en la UTN FRBA.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column ">
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-pencil fs-6 text-center "></i>
+                  </button>
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-trash-can fs-6 text-center "></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column ">
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus pt-1 fs-5 text-center "></i>
+          </button>
+        </div>
+      </section>
+      <!-- progresbar-->
+      <section class="d-flex flex-row content-container">
+        <div class="d-flex flex-column container-80em">
+          <div class="d-flex flex-row">
+            <!-- columna de filas-->
+            <div class="d-flex flex-column container-80em ">
+              <!-- filas con datos -->
+              <div class="d-flex flex-row">
+                <!-- progressbar-->
                 <div class="progressbar-container p-0">
                   <div class="d-flex flex-row progress-container">
                     <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:90;">
@@ -189,49 +282,96 @@
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex progress-container">
-                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
-                      <div class="dot"></div>
-                      <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                      </svg>
-                      <div class="number">
-                        <i class="fa-brands fa-java"></i>
-                        <h2>25<span>%</span></h2>
-                      </div>
-                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column ">
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus pt-1 fs-5 text-center "></i>
+          </button>
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-pencil fs-6 text-center "></i>
+          </button>
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-trash-can fs-6 text-center "></i>
+          </button>
+        </div>
+      </section>
+      <!-- proyectos -->
+      <section class="d-flex flex-row content-container">
+        <div class="d-flex flex-column container-80em">
+          <!-- Proyectos -->
+          <div class="d-flex flex-row">
+            <p class="text-title">Proyectos:</p>
+          </div>
+          <div class="d-flex flex-row">
+            <!-- columna de filas-->
+            <div class="d-flex flex-column container-80em ">
+              <!-- filas con datos -->
+              <div class="d-flex flex-row border border-2 rounded p-2 m-1 box-shadow">
+                <div class="d-flex flex-column info-container">
+                  <div class="d-flex"></div>
+                  <div class="d-flex">
+                    <img src="" id="img-info" class="border-profile img-info" alt="" />
                   </div>
-                  <div class="d-flex progress-container">
-                    <div class="d-flex circular-progress" style="--clr: #2f2f2f; --num:25;">
-                      <div class="dot"></div>
-                      <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                      </svg>
-                      <div class="number">
-                        <i class="fa-brands fa-angular"></i>
-                        <h2>25<span>%</span></h2>
-                      </div>
-                    </div>
+                  <div class="d-flex flex-column"></div>
+                </div>
+                <div class="container-fluid p-0">
+                  <div class="d-flex flex-column info-text-container">
+                    <p class="text-description">
+                    </p>
+                    <p class="text-description">
+                    </p>
                   </div>
                 </div>
-                <div class="d-flex flex-column align-items-end">
+                <div class="d-flex flex-column ">
                   <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fa-solid fa-pen-to-square fs-5 text-center "></i>
+                    <i class="fa-solid fa-pencil fs-6 text-center "></i>
+                  </button>
+                  <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-trash-can fs-6 text-center "></i>
                   </button>
                 </div>
-              </section>                  
+              </div>
             </div>
-        </main>
-        <footer class="footer-container bg-dark">
+          </div>
+        </div>
+        <div class="d-flex flex-column ">
+          <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus pt-1 fs-5 text-center "></i>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-container bg-dark">
+  </footer>
+  <!-- modals -->
+  <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ....
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scripts -->
 
-        </footer>
-        <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/4825b5f8db.js" crossorigin="anonymous"></script>
+</body>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/4825b5f8db.js" crossorigin="anonymous"></script>
-        <script src="scrispt.js"></script>
-      </body>
 </html>
